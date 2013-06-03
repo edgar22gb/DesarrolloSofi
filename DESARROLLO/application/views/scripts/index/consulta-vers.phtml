@@ -1,0 +1,25 @@
+<?php 
+$tablaVersion= new  Application_Model_DbTable_Version();
+$ver=$tablaVersion->fetchAll();
+foreach ($ver as $fila); 
+{
+
+		//echo $fila->idrecurso."\n";
+}
+
+?>
+
+<table class="top_18"cellpadding="20">
+  <tr>
+    <th>IDVERSION</th>
+    <th>NOMBRE DE VERSION</th>
+   
+    
+  </tr>
+  <tr>
+    <td><?php echo $fila->idversion."\n";?></td>
+    <td><?php echo $fila->nombre."\n";?></td>
+    
+    
+  </tr>
+</table>

@@ -1,0 +1,29 @@
+<?php 
+$tablaCliente= new  Application_Model_DbTable_Clientes();
+$ver=$tablaCliente->fetchAll();
+foreach ($ver as $fila); 
+{
+
+		//echo $fila->idrecurso."\n";
+}
+
+?>
+
+<table class="top_18"cellpadding="30">
+  <tr>
+    <th>IDCLIENTE</th>
+    <th>NOMBRE</th>
+    <th>DIRECCION</th>
+    <th>TELEFONO</th>
+   
+    
+  </tr>
+  <tr>
+    <td><?php echo $fila->idcliente."\n";?></td>
+    <td><?php echo $fila->nombre."\n";?></td>
+    <td><?php echo $fila->direccion."\n";?></td>
+    <td><?php echo $fila->telefono."\n";?></td>
+    
+    
+  </tr>
+</table>

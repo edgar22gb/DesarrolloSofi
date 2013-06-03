@@ -1,0 +1,29 @@
+<?php 
+	$tabladesarrollador= new Application_Model_DbTable_Desarrolladores();
+	$ver=$tabladesarrollador->fetchAll();
+	//$ver=$this->verproyectos;
+	foreach ($ver as $fila);
+	{
+		//echo 'hola';
+		//echo $fila->iddesarrollador."\n";
+		//echo $fila->nombre."\n";
+		//echo $fila->finicio."\n";
+		//echo $fila->ftermino."\n";
+		
+	}
+	
+	?>
+	<table class="top_18  "cellpadding="23"cellspacing="10">
+  <tr>
+    <th>IDDESARROLLADOR</th>
+    <th>NOMBRE</th>
+    
+  </tr>
+  <tr>
+    <td><?php echo $fila->iddesarrollador."\n";?></td>
+    <td><?php echo $fila->nombre."\n";?></td>
+    
+  </tr>
+</table>
+	
+	<a href="/index/desarrollador">Regresar</a>

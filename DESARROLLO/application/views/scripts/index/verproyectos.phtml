@@ -1,0 +1,30 @@
+
+
+	<?php 
+	$tablaproyecto=new Application_Model_DbTable_Pro();
+	$ver=$tablaproyecto->fetchAll();
+	//$ver=$this->verproyectos;
+	foreach ($ver as $fila)
+	{
+		
+	
+		
+	}
+	
+	?>
+	<table class="top_18"cellpadding="20">
+  <tr>
+    <th>IDPROYECTO</th>
+    <th>NOMBRE</th>
+    <th>FINICIO</th>
+    <th>FTERMINO</th>
+  </tr>
+  <tr>
+    <td><?php echo $fila->idproyecto."\n";?></td>
+    <td><?php echo $fila->nombre."\n";?></td>
+    <td><?php echo $fila->finicio."\n";?>
+    <td><?php echo $fila->ftermino."\n";?>
+  </tr>
+</table>
+
+<a href="/index/repro">regresar</a>;

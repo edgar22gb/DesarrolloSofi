@@ -1,0 +1,28 @@
+
+
+
+<?php 
+$tablaRecu= new  Application_Model_DbTable_Recurso();
+$ver=$tablaRecu->fetchAll();
+foreach ($ver as $fila); 
+{
+
+		//echo $fila->idrecurso."\n";
+}
+
+?>
+
+<table class="top_18"cellpadding="22">
+  <tr>
+    <th>IDRECURSO</th>
+    <th>NOMBRE</th>
+    <th>VERSION</th>
+    
+  </tr>
+  <tr>
+    <td><?php echo $fila->idrecurso."\n";?></td>
+    <td><?php echo $fila->nombre."\n";?></td>
+    <td><?php echo $fila->version."\n";?>
+    
+  </tr>
+</table>
